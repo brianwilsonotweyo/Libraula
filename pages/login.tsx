@@ -34,7 +34,7 @@ function Login() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Image
-        src="https://rb.gy/om88ns"
+        src="https://rb.gy/dptcp5"
         layout="fill"
         className="-z-10 !hidden opacity-60 sm:!inline"
         objectFit="cover"
