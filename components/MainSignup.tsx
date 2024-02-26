@@ -176,11 +176,42 @@ const MainSignup = () => {
                                 <Typography variant="h5">How much does it cost?</Typography>
                             </AccordionSummary>
                             <AccordionDetails>
-                                <Typography>
-                                    The cost of Libraula subscription varies depending on the plan you choose. We offer different pricing tiers to suit your reading needs and budget.
-                                </Typography>
+                                <div>
+                                    <p className="mb-4">The cost of Libraula subscription varies depending on the plan you choose. We offer different pricing tiers to suit your reading needs and budget.</p>
+                                    <table className="table-auto">
+                                        <thead>
+                                            <tr>
+                                                <th className="border px-4 py-2">Books at a Time</th>
+                                                <th className="border px-4 py-2">Price</th>
+                                                <th className="border px-4 py-2">Additional Features</th>
+                                                <th className="border px-4 py-2">Extension</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td className="border px-4 py-2">1</td>
+                                                <td className="border px-4 py-2">UGX 45,000</td>
+                                                <td className="border px-4 py-2">Free delivery</td>
+                                                <td className="border px-4 py-2">No extension</td>
+                                            </tr>
+                                            <tr>
+                                                <td className="border px-4 py-2">2</td>
+                                                <td className="border px-4 py-2">UGX 75,000</td>
+                                                <td className="border px-4 py-2">Free delivery, Audio books</td>
+                                                <td className="border px-4 py-2">Up to 3 days</td>
+                                            </tr>
+                                            <tr>
+                                                <td className="border px-4 py-2">3</td>
+                                                <td className="border px-4 py-2">UGX 100,000</td>
+                                                <td className="border px-4 py-2">Free delivery, Audio books, Monthly zines</td>
+                                                <td className="border px-4 py-2">Up to 1 week</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </AccordionDetails>
                         </Accordion>
+
 
                         <Accordion>
                             <AccordionSummary
@@ -214,7 +245,48 @@ const MainSignup = () => {
 
                     </div>
                 </div>
+
+                <p className='text-center text-lg sm:text-xl md:text-xl lg:text-xl xl:text-xl py-2'>
+                    Ready to start reading? Enter your phone number to create an account or restart your membership.
+                </p>
+
+                <div className='py-8 px-5'>
+                    <div className='flex flex-col mt-3 items-center sm:flex-row sm:justify-center sm:space-y-2 sm:space-x-4 mb-8'>
+                        <input className='py-2 px-4 sm:py-3 sm:px-6 sm:text-lg rounded-md border border-white bg-transparent mb-2 sm:mb-0' type="text" placeholder='Phone Number' />
+                        <button className='bg-[#f01621] text-base px-4 py-2 sm:px-6 sm:py-3 rounded-md'>Get Started</button>
+                    </div>
+                </div>
+
             </section>
+
+            <footer className="text-white py-8 px-6">
+                <div className="container mx-auto flex flex-wrap justify-between items-center">
+                    <div className="mb-4">
+                        <p className="text-sm">
+                            Questions? Call <a href="tel:+256764725740" className="text-white underline">+256764725740</a> or <a href="tel:+256758306513" className="text-white underline">+256758306513</a>
+                        </p>
+                        <p className="text-sm">Help Centre</p>
+                    </div>
+                    <div className="mb-4">
+                        <p className="text-sm">Privacy</p>
+                    </div>
+                    <div className="mb-4">
+                        <p className="text-sm">Terms of Use</p>
+                    </div>
+                    <div className="text-sm">
+                        <p>&copy; 2024 Libraula. All rights reserved.</p>
+                        <p>Legal notices</p>
+                    </div>
+
+                    <div className='px-2'>
+                        <select name="language" id="language" className='bg-transparent outline outline-1 outline-white text-white p-1'>
+                            <option value="English">English</option>
+                            <option value="Luganda">Luganda</option>
+                        </select>
+                    </div>
+                </div>
+            </footer>
+
         </div>
     )
 }
