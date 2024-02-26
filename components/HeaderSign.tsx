@@ -1,9 +1,8 @@
 import React from 'react'
-import Header from './Header'
 
 const HeaderSign = () => {
   return (
-    <Header/>
+    <div>Testing 123</div>
   )
 }
 

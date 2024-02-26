@@ -1,9 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useRouter } from 'next/router';
+import useAuth from '../hooks/useAuth';
 
-function Signup() {
+const Signup = () => {
+  const { user } = useAuth();
+  const router = useRouter();
+
+  useEffect(() => {
+    // Redirect to the home page if the user is already logged in
+    if (user) {
+      router.push('/');
+    }
+  }, [user, router]);
+
   return (
-    <div>
-      <h1>Redirecting to Login Page...</h1>
+    <div className="bg-black text-white h-screen flex items-center justify-center">
+      <h1 className="text-3xl font-bold">Welcome to Signup Page</h1>
     </div>
   );
 }
