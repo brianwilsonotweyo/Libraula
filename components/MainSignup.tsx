@@ -79,6 +79,29 @@ const MainSignup = () => {
                 </div>
             </section>
 
+            <section className='mt-2'>
+                <div className='py-10 flex items-center  justify-center flex-col lg:flex-row xl:px-20 '>
+                    <div className='text-white text-center lg:text-start px-10'>
+                        <h1 className='text-3xl md:text-6xl font-bold'>
+                            Read, Return, Read Again.
+                        </h1>
+
+                        <p className='text-xl md:text-2xl py-4'>
+                            Add the books to queue, queue items are delivered, when done reading, request a return and the next queue item  is delivered.
+                        </p>
+                    </div>
+
+                    <div className='w-48 lg:w-1/2 h-auto lg:h-auto mb-8 lg:mb-0'>
+                        <Image
+                            src="https://rb.gy/p2hphi"
+                            alt="Description of the image"
+                            width={300} // Adjust the width as needed
+                            height={200} // Adjust the height as needed
+                            className='object-cover'
+                        />
+                    </div>
+                </div>
+            </section>
 
         </div>
     )
