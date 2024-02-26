@@ -47,17 +47,22 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
           // Logged in...
           setUser(user)
           setLoading(false)
-        } else {
-          // Not logged in...
+          router.push('/') // Redirect logged-in users to the home page
+        } else if (router.pathname !== '/login') {
+          // Not logged in and not on the login page...
           setUser(null)
           setLoading(true)
-          router.push('/login')
+          router.push('/signup') // Redirect to /signup if not logged in and not on the login page
+        } else {
+          // Not logged in but on the login page...
+          setUser(null)
+          setLoading(true)
+          setInitialLoading(false) // No need to wait for further actions
         }
-
-        setInitialLoading(false)
       }),
-    [auth]
+    [auth, router.pathname] // Add router.pathname to dependencies to re-run effect when pathname changes
   )
+  
 
   const signUp = async (email: string, password: string) => {
     setLoading(true)
