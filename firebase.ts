@@ -9,16 +9,27 @@ import { getAuth } from 'firebase/auth'
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: 'AIzaSyBuu0YHXOcgmqWLZl-fiMn6lG2wUhdPg8k',
-  authDomain: 'next-firebase-stripe-39bf8.firebaseapp.com',
-  databaseURL: 'https://next-firebase-stripe-39bf8-default-rtdb.firebaseio.com',
-  projectId: 'next-firebase-stripe-39bf8',
-  storageBucket: 'next-firebase-stripe-39bf8.appspot.com',
-  messagingSenderId: '777709922250',
-  appId: '1:777709922250:web:4500ee09dca93e1406d133',
-}
+
+  apiKey: "AIzaSyCEDlmu7536VpWW2dykHMJqcJHljn_C2kE",
+
+  authDomain: "libraula-b6f3d.firebaseapp.com",
+
+  projectId: "libraula-b6f3d",
+
+  storageBucket: "libraula-b6f3d.appspot.com",
+
+  messagingSenderId: "699219126744",
+
+  appId: "1:699219126744:web:92192fadf2bb7e2f2aaaad",
+
+  measurementId: "G-HEN6MDZ0SQ"
+
+};
+
+
 // Initialize Firebase
-const app = !getApps().length ? initializeApp(firebaseConfig) : getApp()
+const app = initializeApp(firebaseConfig);
+// const app = !getApps().length ? initializeApp(firebaseConfig) : getApp()
 const db = getFirestore()
 const auth = getAuth()
 
