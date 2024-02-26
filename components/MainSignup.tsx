@@ -15,7 +15,7 @@ const MainSignup = () => {
         <div>
             <section>
                 <div className="relative w-full h-[95vh] sm:h-[80vh] md:h-[70vh] lg:h-[60vh] xl:h-[50vh] 2xl:h-[450px] lg:h-screen xl:h-screen 2xl:h-screen">
-                    <div className="absolute inset-0 bg-cover bg-center brightness-50" style={{ backgroundImage: "url('https://rb.gy/xw7aht')" }}>
+                    <div className="absolute inset-0 bg-cover bg-center brightness-50" style={{ backgroundImage: "url('https://rb.gy/om88ns')" }}>
                         {/* Optional: Add content inside the container */}
                     </div>
                 </div>
@@ -54,7 +54,7 @@ const MainSignup = () => {
 
                     <div className='w-48 lg:w-1/2 h-auto lg:h-auto mb-8 lg:mb-0'>
                         <Image
-                            src="https://rb.gy/xw7aht"
+                            src="https://rb.gy/om88ns"
                             alt="Description of the image"
                             width={300} // Adjust the width as needed
                             height={200} // Adjust the height as needed
@@ -69,7 +69,7 @@ const MainSignup = () => {
                     {/* Image */}
                     <div className='w-48 lg:w-1/2 h-auto lg:h-auto mb-8 lg:mb-0 pt-4 sm:pt-8'>
                         <Image
-                            src="https://rb.gy/xw7aht"
+                            src="https://rb.gy/om88ns"
                             alt="Description of the image"
                             width={300} // Adjust the width as needed
                             height={200} // Adjust the height as needed
@@ -103,7 +103,7 @@ const MainSignup = () => {
 
                     <div className='w-48 lg:w-1/2 h-auto lg:h-auto mb-8 lg:mb-0'>
                         <Image
-                            src="https://rb.gy/xw7aht"
+                            src="https://rb.gy/om88ns"
                             alt="Description of the image"
                             width={300} // Adjust the width as needed
                             height={200} // Adjust the height as needed

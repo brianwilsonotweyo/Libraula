@@ -34,14 +34,14 @@ function Login() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Image
-        src="https://rb.gy/xw7aht"
+        src="https://rb.gy/om88ns"
         layout="fill"
         className="-z-10 !hidden opacity-60 sm:!inline"
         objectFit="cover"
       />
 
       <img
-        src="https://rb.gy/ulxxee"
+        src="https://rb.gy/pph9f2"
         className="absolute left-4 top-4 cursor-pointer object-contain md:left-10 md:top-6"
         width={150}
         height={150}
