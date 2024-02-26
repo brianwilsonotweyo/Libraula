@@ -21,15 +21,9 @@ const MainSignup = () => {
                         <p className='text-center text-lg sm:text-xl md:text-xl lg:text-xl xl:text-xl py-2'>Ready to start reading? Enter your phone number to create an account or restart your membership.</p>
 
                         <div className='flex flex-col mt-3 px-5 items-center sm:flex-row sm:justify-center sm:space-y-2 sm:space-x-4'>
-                            <input
-                                className='py-2 px-4 sm:py-3 sm:px-6 sm:text-lg rounded-md border border-white bg-transparent mb-2 sm:mb-0'
-                                type="text"
-                                placeholder='Phone Number'
-                                onChange={(e) => console.log(e.target.value)} // Ensure the input field is functional
-                            />
+                            <input className='py-2 px-4 sm:py-3 sm:px-6 sm:text-lg rounded-md border border-white bg-transparent mb-2 sm:mb-0' type="text" placeholder='Phone Number' />
                             <button className='bg-[#f01621] text-base px-4 py-2 sm:px-6 sm:py-3 rounded-md'>Get Started</button>
                         </div>
-
 
                     </div>
                 </div>
@@ -39,7 +33,7 @@ const MainSignup = () => {
             <section className='mt-2'>
                 <div className='py-10 flex items-center  justify-center flex-col lg:flex-row xl:px-20 '>
                     <div className='text-white text-center lg:text-start px-10'>
-                        <h1 className='text-4xl md:text-6xl '>
+                        <h1 className='text-2.2xl md:text-6xl font-bold'>
                             Read at yout leisure.
                         </h1>
 
@@ -74,12 +68,12 @@ const MainSignup = () => {
                     </div>
 
                     <div className='text-white text-center lg:text-start px-10'>
-                        <h1 className='text-4xl md:text-6xl '>
-                            Read at yout leisure.
+                        <h1 className='text-2.2xl md:text-6xl font-bold'>
+                            Choose what you want to read.
                         </h1>
 
                         <p className='text-xl md:text-2xl py-4'>
-                            Read as many Novels, Manga, Comics and Magazines as you'd like, wherever and whenever.
+                            Select whatever you'd like to read and have it brought it directly to you.
                         </p>
                     </div>
                 </div>
