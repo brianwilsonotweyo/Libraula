@@ -1,5 +1,15 @@
 import React from 'react'
 import Image from 'next/image'
+
+import {
+    Accordion,
+    AccordionSummary,
+    AccordionDetails,
+    Typography,
+} from '@mui/material';
+import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
+
+
 const MainSignup = () => {
     return (
         <div>
@@ -102,7 +112,109 @@ const MainSignup = () => {
                     </div>
                 </div>
             </section>
+            <section className='mt-2 bg-black'>
+                <div className='py-10 flex items-center justify-center flex-col lg:flex-row xl:px-20 '>
+                    <h1 className='text-4xl md:text-6xl text-white text-center'>
+                        Frequently Asked Questions
+                    </h1>
+                </div>
 
+                <div className="flex justify-center mt-6">
+                    <div className="w-full max-w-3xl">
+                        <Accordion>
+                            <AccordionSummary
+                                expandIcon={<ArrowForwardIosSharpIcon />}
+                                aria-controls="panel-content"
+                                id="panel-header"
+                            >
+                                <Typography variant="h5">What is Libraula?</Typography>
+                            </AccordionSummary>
+                            <AccordionDetails>
+                                <Typography>
+                                    Libraula is a platform that allows you to borrow books on a subscription basis, similar to Netflix's DVD rental service but for books.
+                                </Typography>
+                            </AccordionDetails>
+                        </Accordion>
+
+                        <Accordion>
+                            <AccordionSummary
+                                expandIcon={<ArrowForwardIosSharpIcon />}
+                                aria-controls="panel-content"
+                                id="panel-header"
+                            >
+                                <Typography variant="h5">How does Libraula work?</Typography>
+                            </AccordionSummary>
+                            <AccordionDetails>
+                                <Typography>
+                                    You simply sign up for a subscription, browse our library, select the books you want to read, and we'll deliver them to you. You can keep the books as long as you want, and return them when you're done to get more.
+                                </Typography>
+                            </AccordionDetails>
+                        </Accordion>
+
+                        <Accordion>
+                            <AccordionSummary
+                                expandIcon={<ArrowForwardIosSharpIcon />}
+                                aria-controls="panel-content"
+                                id="panel-header"
+                            >
+                                <Typography variant="h5">What types of books are available?</Typography>
+                            </AccordionSummary>
+                            <AccordionDetails>
+                                <Typography>
+                                    Libraula offers a wide range of books including novels, manga, comics, magazines, and more. We aim to cater to diverse reading interests.
+                                </Typography>
+                            </AccordionDetails>
+                        </Accordion>
+
+
+                        <Accordion>
+                            <AccordionSummary
+                                expandIcon={<ArrowForwardIosSharpIcon />}
+                                aria-controls="panel-content"
+                                id="panel-header"
+                            >
+                                <Typography variant="h5">How much does it cost?</Typography>
+                            </AccordionSummary>
+                            <AccordionDetails>
+                                <Typography>
+                                    The cost of Libraula subscription varies depending on the plan you choose. We offer different pricing tiers to suit your reading needs and budget.
+                                </Typography>
+                            </AccordionDetails>
+                        </Accordion>
+
+                        <Accordion>
+                            <AccordionSummary
+                                expandIcon={<ArrowForwardIosSharpIcon />}
+                                aria-controls="panel-content"
+                                id="panel-header"
+                            >
+                                <Typography variant="h5">Is it good for kids?</Typography>
+                            </AccordionSummary>
+                            <AccordionDetails>
+                                <Typography>
+                                    Libraula offers a selection of children's books suitable for various age groups. We strive to provide a safe and enriching reading experience for kids.
+                                </Typography>
+                            </AccordionDetails>
+                        </Accordion>
+
+                        <Accordion>
+                            <AccordionSummary
+                                expandIcon={<ArrowForwardIosSharpIcon />}
+                                aria-controls="panel-content"
+                                id="panel-header"
+                            >
+                                <Typography variant="h5">Where can I read?</Typography>
+                            </AccordionSummary>
+                            <AccordionDetails>
+                                <Typography>
+                                    You can read your borrowed books anywhere you like – at home, during your commute, or even on vacation. As long as you have access to your subscription, you can enjoy reading wherever you are.
+                                </Typography>
+                            </AccordionDetails>
+                        </Accordion>
+
+                    </div>
+                </div>
+            </section>
         </div>
     )
 }
