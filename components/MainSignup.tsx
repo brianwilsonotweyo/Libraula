@@ -33,8 +33,8 @@ const MainSignup = () => {
             <section className='mt-2'>
                 <div className='py-10 flex items-center  justify-center flex-col lg:flex-row xl:px-20 '>
                     <div className='text-white text-center lg:text-start px-10'>
-                        <h1 className='text-2.2xl md:text-6xl font-bold'>
-                            Read at yout leisure.
+                        <h1 className='text-3xl md:text-6xl font-bold'>
+                            Read at your leisure.
                         </h1>
 
                         <p className='text-xl md:text-2xl py-4'>
@@ -57,7 +57,7 @@ const MainSignup = () => {
             <section className='mt-2 bg-black'>
                 <div className='flex flex-col lg:flex-row justify-center items-center lg:px-20 xl:px-32'>
                     {/* Image */}
-                    <div className='w-48 lg:w-1/2 h-auto lg:h-auto mb-8 lg:mb-0'>
+                    <div className='w-48 lg:w-1/2 h-auto lg:h-auto mb-8 lg:mb-0 pt-4 sm:pt-8'>
                         <Image
                             src="https://rb.gy/p2hphi"
                             alt="Description of the image"
@@ -68,7 +68,7 @@ const MainSignup = () => {
                     </div>
 
                     <div className='text-white text-center lg:text-start px-10'>
-                        <h1 className='text-2.2xl md:text-6xl font-bold'>
+                        <h1 className='text-3xl md:text-6xl font-bold'>
                             Choose what you want to read.
                         </h1>
 
