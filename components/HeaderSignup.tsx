@@ -5,7 +5,7 @@ const HeaderSignup = () => {
     <header className='flex items-center z-50 absolute w-full'>
         <div>
         <img
-          src="https://rb.gy/pph9f2"
+          src="https://rb.gy/e2yjuv"
           width={100}
           height={100}
           className="cursor-pointer object-contain"

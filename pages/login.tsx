@@ -41,7 +41,7 @@ function Login() {
       />
 
       <img
-        src="https://rb.gy/pph9f2"
+        src="https://rb.gy/e2yjuv"
         className="absolute left-4 top-4 cursor-pointer object-contain md:left-10 md:top-6"
         width={150}
         height={150}
