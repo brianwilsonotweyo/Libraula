@@ -15,7 +15,7 @@ const MainSignup = () => {
         <div>
             <section>
                 <div className="relative w-full h-[95vh] sm:h-[80vh] md:h-[70vh] lg:h-[60vh] xl:h-[50vh] 2xl:h-[450px] lg:h-screen xl:h-screen 2xl:h-screen">
-                    <div className="absolute inset-0 bg-cover bg-center brightness-50" style={{ backgroundImage: "url('https://rb.gy/p2hphi')" }}>
+                    <div className="absolute inset-0 bg-cover bg-center brightness-50" style={{ backgroundImage: "url('https://rb.gy/xw7aht')" }}>
                         {/* Optional: Add content inside the container */}
                     </div>
                 </div>
@@ -32,7 +32,7 @@ const MainSignup = () => {
 
                         <div className='flex flex-col mt-3 px-5 items-center sm:flex-row sm:justify-center sm:space-y-2 sm:space-x-4'>
                             <input className='py-2 px-4 sm:py-3 sm:px-6 sm:text-lg rounded-md border border-white bg-transparent mb-2 sm:mb-0' type="text" placeholder='Phone Number' />
-                            <button className='bg-[#f01621] text-base px-4 py-2 sm:px-6 sm:py-3 rounded-md'>Get Started</button>
+                            <button className='bg-[#14E509] text-base px-4 py-2 sm:px-6 sm:py-3 rounded-md'>Get Started</button>
                         </div>
 
                     </div>
@@ -54,7 +54,7 @@ const MainSignup = () => {
 
                     <div className='w-48 lg:w-1/2 h-auto lg:h-auto mb-8 lg:mb-0'>
                         <Image
-                            src="https://rb.gy/p2hphi"
+                            src="https://rb.gy/xw7aht"
                             alt="Description of the image"
                             width={300} // Adjust the width as needed
                             height={200} // Adjust the height as needed
@@ -69,7 +69,7 @@ const MainSignup = () => {
                     {/* Image */}
                     <div className='w-48 lg:w-1/2 h-auto lg:h-auto mb-8 lg:mb-0 pt-4 sm:pt-8'>
                         <Image
-                            src="https://rb.gy/p2hphi"
+                            src="https://rb.gy/xw7aht"
                             alt="Description of the image"
                             width={300} // Adjust the width as needed
                             height={200} // Adjust the height as needed
@@ -103,7 +103,7 @@ const MainSignup = () => {
 
                     <div className='w-48 lg:w-1/2 h-auto lg:h-auto mb-8 lg:mb-0'>
                         <Image
-                            src="https://rb.gy/p2hphi"
+                            src="https://rb.gy/xw7aht"
                             alt="Description of the image"
                             width={300} // Adjust the width as needed
                             height={200} // Adjust the height as needed
@@ -253,7 +253,7 @@ const MainSignup = () => {
                 <div className='py-8 px-5'>
                     <div className='flex flex-col mt-3 items-center sm:flex-row sm:justify-center sm:space-y-2 sm:space-x-4 mb-8'>
                         <input className='py-2 px-4 sm:py-3 sm:px-6 sm:text-lg rounded-md border border-white bg-transparent mb-2 sm:mb-0' type="text" placeholder='Phone Number' />
-                        <button className='bg-[#f01621] text-base px-4 py-2 sm:px-6 sm:py-3 rounded-md'>Get Started</button>
+                        <button className='bg-[#14E509] text-base px-4 py-2 sm:px-6 sm:py-3 rounded-md'>Get Started</button>
                     </div>
                 </div>
 
