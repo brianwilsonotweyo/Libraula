@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import useAuth from '../hooks/useAuth';
+import HeaderSignup from '../components/HeaderSignup';
+import MainSignup from '../components/MainSignup';
 
 const Signup = () => {
   const { user } = useAuth();
@@ -14,9 +16,11 @@ const Signup = () => {
   }, [user, router]);
 
   return (
-    <div className="bg-black text-white h-screen flex items-center justify-center">
-      <h1 className="text-3xl font-bold">Welcome to Signup Page</h1>
-    </div>
+    <>
+    <HeaderSignup/>
+    <MainSignup/>
+    </>
+
   );
 }
 

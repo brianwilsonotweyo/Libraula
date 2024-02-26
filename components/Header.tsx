@@ -29,8 +29,8 @@ function Header() {
       <div className="flex items-center space-x-2 md:space-x-10">
         <img
           src="https://rb.gy/ulxxee"
-          width={100}
-          height={100}
+          width={120}
+          height={80}
           className="cursor-pointer object-contain"
         />
 
