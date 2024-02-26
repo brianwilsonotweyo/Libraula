@@ -10,16 +10,18 @@ const MainSignup = () => {
                         width={1980}
                         height={1080}
                         alt='netbg'
-                        className='brightness-50 h-[80vh] sm:h-auto'
+                        className='brightness-50 h-[90vh] sm:h-[80vh] md:h-[70vh] lg:h-[60vh] xl:h-[50vh]'
                     />
                 </div>
 
 
+
                 <div className='absolute top-24 sm:top-24 md:top-24 lg:top-24 xl:top-24'>
                     <div className='text-white w-full sm:px-10 md:px-20' >
-                        <h1 className='text-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-7xl font-bold'>
-                            Unlimited Books, Comics, Manga and more.
-                        </h1>
+                    <h1 className='text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl font-bold'>
+    Unlimited Books, Comics, Manga and more.
+</h1>
+
 
                         <p className='text-center text-lg sm:text-xl md:text-xl lg:text-xl xl:text-xl'>Your very own personal Library</p>
                         <p className='text-center text-lg sm:text-xl md:text-xl lg:text-xl xl:text-xl py-2'>Ready to start reading? Enter your phone number to create an account or restart your membership.</p>
