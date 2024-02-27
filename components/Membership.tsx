@@ -26,7 +26,7 @@ function Membership() {
           onClick={manageSubscription}
         >
           {isBillingLoading ? (
-            <Loader color="dark:fill-[#e50914]" />
+            <Loader color="dark:fill-[#14E509]" />
           ) : (
             'Cancel Membership'
           )}

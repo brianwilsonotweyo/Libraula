@@ -17,7 +17,7 @@ function Table({ products, selectedPlan }: Props) {
               key={product.id}
               className={`tableDataFeature ${
                 selectedPlan?.id === product.id
-                  ? 'text-[#e50914]'
+                  ? 'text-[#14E509]'
                   : 'text-[gray]'
               }`}
             >
@@ -33,7 +33,7 @@ function Table({ products, selectedPlan }: Props) {
               key={product.id}
               className={`tableDataFeature ${
                 selectedPlan?.id === product.id
-                  ? 'text-[#e50914]'
+                  ? 'text-[#14E509]'
                   : 'text-[gray]'
               }`}
             >
@@ -48,7 +48,7 @@ function Table({ products, selectedPlan }: Props) {
             <td
               className={`tableDataFeature ${
                 selectedPlan?.id === product.id
-                  ? 'text-[#E50914]'
+                  ? 'text-[#14E509]'
                   : 'text-[gray]'
               }`}
               key={product.id}
@@ -66,7 +66,7 @@ function Table({ products, selectedPlan }: Props) {
             <td
               className={`tableDataFeature ${
                 selectedPlan?.id === product.id
-                  ? 'text-[#E50914]'
+                  ? 'text-[#14E509]'
                   : 'text-[gray]'
               }`}
               key={product.id}

@@ -68,7 +68,7 @@ function Login() {
               {...register('email', { required: true })}
             />
             {errors.email && (
-              <p className="p-1 text-[13px] font-light  text-orange-500">
+              <p className="p-1 text-[13px] font-light  text-green-500">
                 Please enter a valid email.
               </p>
             )}
@@ -81,7 +81,7 @@ function Login() {
               {...register('password', { required: true })}
             />
             {errors.password && (
-              <p className="p-1 text-[13px] font-light  text-orange-500">
+              <p className="p-1 text-[13px] font-light  text-green-500">
                 Your password must contain between 4 and 60 characters.
               </p>
             )}
@@ -89,7 +89,7 @@ function Login() {
         </div>
 
         <button
-          className="w-full rounded bg-[#e50914] py-3 font-semibold"
+          className="w-full rounded bg-[#14E509] py-3 font-semibold"
           onClick={() => setLogin(true)}
         >
           Sign In

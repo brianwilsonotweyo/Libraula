@@ -55,15 +55,15 @@ function Plans({ products }: Props) {
         </h1>
         <ul>
           <li className="flex items-center gap-x-2 text-lg">
-            <CheckIcon className="h-7 w-7 text-[#E50914]" /> Watch all you want.
+            <CheckIcon className="h-7 w-7 text-[#14E509]" /> Watch all you want.
             Ad-free.
           </li>
           <li className="flex items-center gap-x-2 text-lg">
-            <CheckIcon className="h-7 w-7 text-[#E50914]" /> Recommendations
+            <CheckIcon className="h-7 w-7 text-[#14E509]" /> Recommendations
             just for you.
           </li>
           <li className="flex items-center gap-x-2 text-lg">
-            <CheckIcon className="h-7 w-7 text-[#E50914]" /> Change or cancel
+            <CheckIcon className="h-7 w-7 text-[#14E509]" /> Change or cancel
             your plan anytime.
           </li>
         </ul>
@@ -87,7 +87,7 @@ function Plans({ products }: Props) {
 
           <button
             disabled={!selectedPlan || isBillingLoading}
-            className={`mx-auto w-11/12 rounded bg-[#E50914] py-4 text-xl shadow hover:bg-[#f6121d] md:w-[420px] ${
+            className={`mx-auto w-11/12 rounded bg-[#14E509] py-4 text-xl shadow hover:bg-[#f6121d] md:w-[420px] ${
               isBillingLoading && 'opacity-60'
             }`}
             onClick={subscribeToPlan}
