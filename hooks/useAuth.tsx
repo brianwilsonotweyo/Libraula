@@ -53,9 +53,9 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
       if (user) {
         router.push('/');
       } 
-      // else if (router.pathname !== '/login' && router.pathname !== '/register') {
-      //   router.push('/signup');
-      // }
+      else if (router.pathname !== '/login' && router.pathname !== '/register') {
+        router.push('/signup');
+      }
     }
   }, [user, initialLoading, router]);
 

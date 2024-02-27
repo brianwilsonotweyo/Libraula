@@ -54,6 +54,19 @@ function Register() {
         <title>Libraula - Register</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      <header className='flex items-center z-50 absolute w-full'>
+      <div>
+        <img
+          src="https://rb.gy/e2yjuv"
+          width={200}
+          height={200}
+          className="cursor-pointer object-contain"
+        />
+      </div>
+    </header>
+
+
       <Image
         src="https://rb.gy/dptcp5"
         layout="fill"
@@ -61,12 +74,6 @@ function Register() {
         objectFit="cover"
       />
 
-      <img
-        src="https://rb.gy/e2yjuv"
-        className="absolute left-4 top-4 cursor-pointer object-contain md:left-10 md:top-6"
-        width={150}
-        height={150}
-      />
 
       <form
         onSubmit={handleSubmit(onSubmit)}

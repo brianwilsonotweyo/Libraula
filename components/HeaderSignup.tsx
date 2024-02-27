@@ -13,8 +13,8 @@ const HeaderSignup = () => {
       <div>
         <img
           src="https://rb.gy/e2yjuv"
-          width={100}
-          height={100}
+          width={200}
+          height={200}
           className="cursor-pointer object-contain"
         />
       </div>
