@@ -36,7 +36,7 @@ function Register() {
 
       // Redirect or perform any additional actions upon successful registration
       // For example, redirect to a different page
-      router.push('/');
+      router.push('/login');
     } catch (error: any) {
       console.error('Error registering user:', error.message);
       // Handle error, display error message to the user, etc.
