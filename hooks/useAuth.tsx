@@ -15,9 +15,9 @@ interface IAuth {
 
 const AuthContext = createContext<IAuth>({
   user: null,
-  signUp: async () => { },
-  signIn: async () => { },
-  logout: async () => { },
+  signUp: async () => {},
+  signIn: async () => {},
+  logout: async () => {},
   error: null,
   loading: false,
 });
@@ -52,16 +52,12 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
     if (!initialLoading) {
       if (user) {
         router.push('/');
-      } else if (router.pathname === '/register') {
-        // Allow access to the register page ("/register") only if the user is not logged in
-        router.push('/login');
-      } else if (router.pathname !== '/login') {
-        // Redirect all other routes to the signup page ("/signup") if the user is not logged in
-        router.push('/signup');
-      }
+      } 
+      // else if (router.pathname !== '/login' && router.pathname !== '/register') {
+      //   router.push('/signup');
+      // }
     }
   }, [user, initialLoading, router]);
-
 
   const signUp = async (email: string, password: string) => {
     setLoading(true);
