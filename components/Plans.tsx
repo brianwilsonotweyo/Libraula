@@ -55,12 +55,10 @@ function Plans({ products }: Props) {
         </h1>
         <ul>
           <li className="flex items-center gap-x-2 text-lg">
-            <CheckIcon className="h-7 w-7 text-[#14E509]" /> Watch all you want.
-            Ad-free.
+            <CheckIcon className="h-7 w-7 text-[#14E509]" /> Read All the books you'd like.
           </li>
           <li className="flex items-center gap-x-2 text-lg">
-            <CheckIcon className="h-7 w-7 text-[#14E509]" /> Recommendations
-            just for you.
+            <CheckIcon className="h-7 w-7 text-[#14E509]" /> Free Deliveries and Pickups.
           </li>
           <li className="flex items-center gap-x-2 text-lg">
             <CheckIcon className="h-7 w-7 text-[#14E509]" /> Change or cancel

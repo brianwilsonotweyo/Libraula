@@ -27,7 +27,7 @@ function Table({ products, selectedPlan }: Props) {
         </tr>
 
         <tr className="tableRow">
-          <td className="tableDataTitle">Video quality</td>
+          <td className="tableDataTitle">Books at a Time</td>
           {products.map((product) => (
             <td
               key={product.id}
@@ -43,7 +43,7 @@ function Table({ products, selectedPlan }: Props) {
         </tr>
 
         <tr className="tableRow">
-          <td className="tableDataTitle">Resolution</td>
+          <td className="tableDataTitle">Extensions</td>
           {products.map((product) => (
             <td
               className={`tableDataFeature ${
@@ -60,7 +60,7 @@ function Table({ products, selectedPlan }: Props) {
 
         <tr className="tableRow">
           <td className="tableDataTitle">
-            Watch on your TV, computer, mobile phone and tablet
+            Additional Features
           </td>
           {products.map((product) => (
             <td
