@@ -1,3 +1,4 @@
+// AuthProvider component (useAuth hook)
 import { createContext, useContext, useEffect, useMemo, useState } from 'react';
 import { useRouter } from 'next/router';
 import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signOut, User } from 'firebase/auth';
@@ -36,27 +37,38 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
       if (user) {
         setUser(user);
         setLoading(false);
-        router.push('/');
-      } else if (router.pathname !== '/login' && router.pathname !== '/signup') {
-        setUser(null);
-        setLoading(true);
-        router.push('/signup');
       } else {
         setUser(null);
         setLoading(true);
-        setInitialLoading(false);
       }
+      setInitialLoading(false);
     });
 
     return () => unsubscribe();
-  }, [router.pathname]);
+  }, []);
+
+  useEffect(() => {
+    // Redirect to appropriate routes based on user authentication status
+    if (!initialLoading) {
+      if (user) {
+        router.push('/');
+      } 
+      // else if (router.pathname !== '/login' && router.pathname !== '/register') {
+      //   router.push('/signup');
+      // }
+    }
+  }, [user, initialLoading, router]);
 
   const signUp = async (email: string, password: string) => {
     setLoading(true);
     await createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         setUser(userCredential.user);
-        router.push('/');
+        if (userCredential.user) {
+          router.push('/');
+        } else {
+          router.push('/login');
+        }
       })
       .catch((error) => alert(error.message))
       .finally(() => setLoading(false));
@@ -97,7 +109,7 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
 
   return (
     <AuthContext.Provider value={memoedValue}>
-      {!initialLoading && children}
+      {children}
     </AuthContext.Provider>
   );
 };

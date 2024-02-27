@@ -15,7 +15,8 @@ const Signup = () => {
     }
   }, [user, router]);
 
-  const handleGetStartedClick = () => {
+  const handleGetStartedClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+    event.preventDefault(); // Prevent the default form submission behavior
     router.push('/register'); // Redirect to the register page
   };
 
@@ -24,7 +25,6 @@ const Signup = () => {
       <HeaderSignup />
       <MainSignup handleGetStartedClick={handleGetStartedClick} />
     </>
-
   );
 }
 
