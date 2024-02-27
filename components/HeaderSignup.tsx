@@ -1,32 +1,39 @@
-import React from 'react'
+import React from 'react';
+import { useRouter } from 'next/router';
 
 const HeaderSignup = () => {
+  const router = useRouter();
+
+  const handleSignInClick = () => {
+    router.push('/login');
+  };
+
   return (
     <header className='flex items-center z-50 absolute w-full'>
-        <div>
+      <div>
         <img
           src="https://rb.gy/e2yjuv"
           width={100}
           height={100}
           className="cursor-pointer object-contain"
         />
-        </div>
+      </div>
 
-        <div className='flex items-center absolute right-3'>
-            <div className='px-2'>
-            <select name="language" id="language" className='bg-transparent outline outline-1 outline-white text-white p-1'>
-                <option value="English">English</option>
-                <option value="Luganda">Luganda</option>
-            </select>
-            </div>
-            <div>
-                <button className='bg-[#14E509] text-base p-1 rounded-sm text-white'>
-                    Sign In
-                </button>
-            </div>
+      <div className='flex items-center absolute right-3'>
+        <div className='px-2'>
+          <select name="language" id="language" className='bg-transparent outline outline-1 outline-white text-white p-1'>
+            <option value="English">English</option>
+            <option value="Luganda">Luganda</option>
+          </select>
         </div>
+        <div>
+          <button className='bg-[#14E509] text-base p-1 rounded-sm text-white' onClick={handleSignInClick}>
+            Sign In
+          </button>
+        </div>
+      </div>
     </header>
-  )
+  );
 }
 
-export default HeaderSignup
+export default HeaderSignup;

@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { useState } from 'react'
 import { SubmitHandler, useForm } from 'react-hook-form'
+import { useRouter } from 'next/router'; // Import useRouter
 import useAuth from '../hooks/useAuth'
 
 interface Inputs {
@@ -10,6 +11,7 @@ interface Inputs {
 }
 
 function Login() {
+  const router = useRouter(); // Initialize useRouter
   const [login, setLogin] = useState(false)
   const { signIn, signUp } = useAuth()
 
@@ -26,6 +28,11 @@ function Login() {
       await signUp(email, password)
     }
   }
+
+  // Function to handle signup button click
+  const handleSignUpClick = () => {
+    router.push('/signup'); // Redirect to /signup route
+  };
 
   return (
     <div className="relative flex h-screen w-screen flex-col bg-black md:items-center md:justify-center md:bg-transparent">
@@ -91,9 +98,9 @@ function Login() {
         <div className="text-[gray]">
           New to Netflix?{' '}
           <button
-            type="submit"
+            type="button" // Change type to "button"
             className="text-white hover:underline"
-            onClick={() => setLogin(false)}
+            onClick={handleSignUpClick} // Add onClick event handler
           >
             Sign up now
           </button>
