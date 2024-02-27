@@ -28,10 +28,10 @@ const MainSignup = () => {
 
 
                         <p className='text-center text-lg sm:text-xl md:text-xl lg:text-xl xl:text-xl'>Your very own personal Library</p>
-                        <p className='text-center text-lg sm:text-xl md:text-xl lg:text-xl xl:text-xl py-2'>Ready to start reading? Enter your phone number to create an account or restart your membership.</p>
+                        <p className='text-center text-lg sm:text-xl md:text-xl lg:text-xl xl:text-xl py-2'>Ready to start reading? Enter your Email Address to create an account or restart your membership.</p>
 
                         <div className='flex flex-col mt-3 px-5 items-center sm:flex-row sm:justify-center sm:space-y-2 sm:space-x-4'>
-                            <input className='py-2 px-4 sm:py-3 sm:px-6 sm:text-lg rounded-md border border-white bg-transparent mb-2 sm:mb-0' type="text" placeholder='Phone Number' />
+                            <input className='py-2 px-4 sm:py-3 sm:px-6 sm:text-lg rounded-md border border-white bg-transparent mb-2 sm:mb-0' type="text" placeholder='Email Address' />
                             <button className='bg-[#14E509] text-base px-4 py-2 sm:px-6 sm:py-3 rounded-md'>Get Started</button>
                         </div>
 
@@ -247,12 +247,12 @@ const MainSignup = () => {
                 </div>
 
                 <p className='text-center text-lg sm:text-xl md:text-xl lg:text-xl xl:text-xl py-2'>
-                    Ready to start reading? Enter your phone number to create an account or restart your membership.
+                    Ready to start reading? Enter your Email Address to create an account or restart your membership.
                 </p>
 
                 <div className='py-8 px-5'>
                     <div className='flex flex-col mt-3 items-center sm:flex-row sm:justify-center sm:space-y-2 sm:space-x-4 mb-8'>
-                        <input className='py-2 px-4 sm:py-3 sm:px-6 sm:text-lg rounded-md border border-white bg-transparent mb-2 sm:mb-0' type="text" placeholder='Phone Number' />
+                        <input className='py-2 px-4 sm:py-3 sm:px-6 sm:text-lg rounded-md border border-white bg-transparent mb-2 sm:mb-0' type="text" placeholder='Email Address' />
                         <button className='bg-[#14E509] text-base px-4 py-2 sm:px-6 sm:py-3 rounded-md'>Get Started</button>
                     </div>
                 </div>

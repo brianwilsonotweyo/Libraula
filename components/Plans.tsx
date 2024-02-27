@@ -27,7 +27,7 @@ function Plans({ products }: Props) {
   return (
     <div>
       <Head>
-        <title>Netflix</title>
+        <title>Libraula</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -35,7 +35,7 @@ function Plans({ products }: Props) {
         <Link href="/">
           <img
             src="https://rb.gy/e2yjuv"
-            alt="Netflix"
+            alt="Libraula"
             width={150}
             height={90}
             className="cursor-pointer object-contain"
