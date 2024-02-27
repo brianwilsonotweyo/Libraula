@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import { useRouter } from 'next/router';
 
 import {
     Accordion,
@@ -10,7 +11,12 @@ import {
 import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
 
 
-const MainSignup = () => {
+interface MainSignupProps {
+    handleGetStartedClick: () => void; // Define the type for handleGetStartedClick prop
+}
+
+const MainSignup: React.FC<MainSignupProps> = ({ handleGetStartedClick }) => {
+    const router = useRouter();
     return (
         <div>
             <section>
@@ -253,7 +259,7 @@ const MainSignup = () => {
                 <div className='py-8 px-5'>
                     <div className='flex flex-col mt-3 items-center sm:flex-row sm:justify-center sm:space-y-2 sm:space-x-4 mb-8'>
                         <input className='py-2 px-4 sm:py-3 sm:px-6 sm:text-lg rounded-md border border-white bg-transparent mb-2 sm:mb-0' type="text" placeholder='Email Address' />
-                        <button className='bg-[#14E509] text-base px-4 py-2 sm:px-6 sm:py-3 rounded-md'>Get Started</button>
+                        <button className='bg-[#14E509] text-base px-4 py-2 sm:px-6 sm:py-3 rounded-md' onClick={handleGetStartedClick}>Get Started</button>
                     </div>
                 </div>
 

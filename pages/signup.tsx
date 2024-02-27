@@ -15,10 +15,14 @@ const Signup = () => {
     }
   }, [user, router]);
 
+  const handleGetStartedClick = () => {
+    router.push('/register'); // Redirect to the register page
+  };
+
   return (
     <>
-    <HeaderSignup/>
-    <MainSignup/>
+      <HeaderSignup />
+      <MainSignup handleGetStartedClick={handleGetStartedClick} />
     </>
 
   );
