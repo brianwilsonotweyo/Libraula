@@ -92,15 +92,17 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
   }
 
   const logout = async () => {
-    setLoading(true)
-
+    setLoading(true);
+  
     signOut(auth)
       .then(() => {
-        setUser(null)
+        setUser(null);
+        router.push('/signup'); // Add this line to redirect to "/signup" after logout
       })
       .catch((error) => alert(error.message))
-      .finally(() => setLoading(false))
-  }
+      .finally(() => setLoading(false));
+  };
+  
 
   const memoedValue = useMemo(
     () => ({
