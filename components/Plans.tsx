@@ -66,7 +66,13 @@ function Plans({ products }: Props) {
           </li>
         </ul>
 
-        
+        <div>
+          <div>
+            <div className='planBox'>
+              Standard
+            </div>
+          </div>
+        </div>
       </main>
     </div>
   )
