@@ -79,6 +79,36 @@ function Plans({ products }: Props) {
             </div>
           </div>
         </div>
+
+        <div className="mt-4 flex flex-col space-y-4">
+          <div className="flex w-full items-center justify-center self-end md:w-3/5">
+            {products.map((product) => (
+              <div
+                key={product.id}
+                className={`planBox ${selectedPlan?.id === product.id ? 'opacity-100' : 'opacity-60'
+                  }`}
+                onClick={() => setSelectedPlan(product)}
+              >
+                {product.name}
+              </div>
+            ))}
+          </div>
+
+          <Table products={products} selectedPlan={selectedPlan} />
+
+          <button
+            disabled={!selectedPlan || isBillingLoading}
+            className={`mx-auto w-11/12 rounded bg-[#14E509] py-4 text-xl shadow hover:bg-[#47f612e0] md:w-[420px] ${isBillingLoading && 'opacity-60'
+              }`}
+            onClick={subscribeToPlan}
+          >
+            {isBillingLoading ? (
+              <Loader color="dark:fill-gray-300" />
+            ) : (
+              'Subscribe'
+            )}
+          </button>
+        </div>
       </main>
     </div>
   )
