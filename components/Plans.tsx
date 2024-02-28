@@ -67,7 +67,7 @@ function Plans({ products }: Props) {
         </ul>
 
         <div className='mt-4 flex flex-col space-y-4'>
-          <div className='flex w full items-center justify-end self-end md:w-3/5'>
+          <div className='flex w-full items-center justify-center self-end md:w-3/5'>
             <div className='planBox'>
               Basic
             </div>
@@ -77,21 +77,6 @@ function Plans({ products }: Props) {
             <div className='planBox'>
               Premium
             </div>
-          </div>
-        </div>
-
-        <div className="mt-4 flex flex-col space-y-4">
-          <div className="flex w-full items-center justify-center self-end md:w-3/5">
-            {products.map((product) => (
-              <div
-                key={product.id}
-                className={`planBox ${selectedPlan?.id === product.id ? 'opacity-100' : 'opacity-60'
-                  }`}
-                onClick={() => setSelectedPlan(product)}
-              >
-                {product.name}
-              </div>
-            ))}
           </div>
 
           <Table products={products} selectedPlan={selectedPlan} />
