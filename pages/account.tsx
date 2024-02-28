@@ -86,16 +86,23 @@ function Account({ products }: Props) {
 export default Account
 
 export const getStaticProps: GetStaticProps = async () => {
-  const products = await getProducts(payments, {
-    includePrices: true,
-    activeOnly: true,
-  })
-    .then((res) => res)
-    .catch((error) => console.log(error.message))
+  try {
+    const products = await getProducts(payments, {
+      includePrices: true,
+      activeOnly: true,
+    });
 
-  return {
-    props: {
-      products,
-    },
+    return {
+      props: {
+        products,
+      },
+    };
+  } catch (error) {
+    console.error("Error fetching products:", error);
+    return {
+      props: {
+        products: [], // Provide an empty array as a fallback
+      },
+    };
   }
-}
+};
