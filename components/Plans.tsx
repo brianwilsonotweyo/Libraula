@@ -68,7 +68,7 @@ function Plans({ products }: Props) {
 
         <div className='mt-4 flex flex-col space-y-4'>
           <div className='flex w-full items-center justify-center self-end md:w-3/5'>
-            <div className='planBox'>
+            <div className='planBox p-2 md:p-4'>
               Basic
             </div>
             <div className='planBox'>
