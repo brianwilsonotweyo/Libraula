@@ -69,7 +69,13 @@ function Plans({ products }: Props) {
         <div>
           <div>
             <div className='planBox'>
+              Basic
+            </div>
+            <div className='planBox'>
               Standard
+            </div>
+            <div className='planBox'>
+              Premium
             </div>
           </div>
         </div>
