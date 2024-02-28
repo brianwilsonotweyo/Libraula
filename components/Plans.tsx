@@ -67,7 +67,7 @@ function Plans({ products }: Props) {
         </ul>
 
         <div>
-          <div>
+          <div className='flex w full'>
             <div className='planBox'>
               Basic
             </div>
