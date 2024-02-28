@@ -126,7 +126,7 @@ const MainSignup: React.FC<MainSignupProps> = ({ handleGetStartedClick }) => {
                     </h1>
                 </div>
 
-                <div className="flex justify-center mt-6">
+                <div className="flex justify-center mt-6 py-8 px-5">
                     <div className="w-full max-w-3xl">
                         <Accordion>
                             <AccordionSummary
@@ -253,7 +253,12 @@ const MainSignup: React.FC<MainSignupProps> = ({ handleGetStartedClick }) => {
                     </div>
                 </div>
 
-                <p className='text-center text-lg sm:text-xl md:text-xl lg:text-xl xl:text-xl py-2'>
+                
+
+            </section>
+
+            <section>
+            <p className='text-center text-lg sm:text-xl md:text-xl lg:text-xl xl:text-xl py-2'>
                     Ready to start reading? Enter your Email Address to create an account or restart your membership.
                 </p>
 
@@ -263,10 +268,9 @@ const MainSignup: React.FC<MainSignupProps> = ({ handleGetStartedClick }) => {
                         <button className='bg-[#14E509] text-base px-4 py-2 sm:px-6 sm:py-3 rounded-md' onClick={handleGetStartedClick}>Get Started</button>
                     </div>
                 </div>
-
             </section>
 
-            <footer className="text-white py-8 px-6">
+            <footer className="text-white py-8 px-6 mt-2 bg-black">
                 <div className="container mx-auto flex flex-wrap justify-between items-center">
                     <div className="mb-4">
                         <p className="text-sm">
