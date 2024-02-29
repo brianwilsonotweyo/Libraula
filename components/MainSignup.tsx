@@ -27,8 +27,10 @@ const MainSignup: React.FC<MainSignupProps> = ({ handleGetStartedClick }) => {
                     </div>
                 </div>
 
-                <div className='absolute top-24 sm:top-24 md:top-24 lg:top-20 xl:top-24'>
-                    <div className='text-white w-full sm:px-10 md:px-20' >
+                <div className='absolute top-32 sm:top-32 md:top-32 lg:top-28 xl:top-32'>
+
+                    <div className='text-white w-full sm:px-10 md:px-20 mt-8 sm:mt-12 md:mt-16 lg:ml-auto lg:mr-auto'
+>
                         <h1 className='text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl font-bold'>
                             Unlimited Books, Comics, Manga and more.
                         </h1>
