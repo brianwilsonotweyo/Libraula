@@ -20,12 +20,6 @@ const HeaderSignup = () => {
       </div>
 
       <div className='flex items-center absolute right-3'>
-        <div className='px-2'>
-          <select name="language" id="language" className='bg-transparent outline outline-1 outline-white text-white p-1'>
-            <option value="English">English</option>
-            <option value="Luganda">Luganda</option>
-          </select>
-        </div>
         <div>
           <button className='bg-[#14E509] text-base p-1 rounded-sm text-white' onClick={handleSignInClick}>
             Sign In

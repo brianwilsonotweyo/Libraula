@@ -253,12 +253,12 @@ const MainSignup: React.FC<MainSignupProps> = ({ handleGetStartedClick }) => {
                     </div>
                 </div>
 
-                
+
 
             </section>
 
             <section>
-            <p className='text-center text-lg sm:text-xl md:text-xl lg:text-xl xl:text-xl py-2'>
+                <p className='text-center text-lg sm:text-xl md:text-xl lg:text-xl xl:text-xl py-2'>
                     Ready to start reading? Enter your Email Address to create an account or restart your membership.
                 </p>
 
@@ -287,13 +287,6 @@ const MainSignup: React.FC<MainSignupProps> = ({ handleGetStartedClick }) => {
                     <div className="text-sm">
                         <p>&copy; 2024 Libraula. All rights reserved.</p>
                         <p>Legal notices</p>
-                    </div>
-
-                    <div className='px-2'>
-                        <select name="language" id="language" className='bg-transparent outline outline-1 outline-white text-white p-1'>
-                            <option value="English">English</option>
-                            <option value="Luganda">Luganda</option>
-                        </select>
                     </div>
                 </div>
             </footer>
